@@ -1,0 +1,19 @@
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int body = 100;
+        uint speed = 200;
+        byte shieid = 255;
+        sbyte weather = -20;
+        float f = 25.24f;
+        double d = 98.4578;
+        ushort time;
+        short damage;
+        bool isMove = true;
+        var c = 1.26;
+
+    }
+}
