@@ -8,14 +8,14 @@ internal class Program
         name = Console.ReadLine();
 
         Console.WriteLine("Сколько вам лет : ");
-        vagest = Console.ReadLine();
+        age = Console.ReadLine();
 
         Console.WriteLine("В какой стране вы живете : ");
-        theCountry = Console.ReadLine();
+        country = Console.ReadLine();
 
         Console.WriteLine("В каком городе вы живете : ");
         city = Console.ReadLine();
 
-        Console.WriteLine("Вас зовут : " + name + "\nВам : " + vagest + "\nВаша страна : " + theCountry + "\nВаш город : " + city);
+        Console.WriteLine("Вас зовут : " + name + "\nВам : " + age + "\nВаша страна : " + country + "\nВаш город : " + city);
     }
 }
