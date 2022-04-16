@@ -6,12 +6,12 @@ internal class Program
     {
         string name = "Лапшин";
         string surname = "Дмитрий";
-        string speed;
+        string temporary;
 
         Console.WriteLine($"Имя - {name} / Фамилия - {surname}");
-        speed = name;
+        temporary = name;
         name = surname;
-        surname = speed;
+        surname = temporary;
         Console.WriteLine($"Имя - {name} / Фамилия - {surname}");
     }
 }
