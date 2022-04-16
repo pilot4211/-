@@ -1,20 +1,21 @@
 using System;
 
-
-
 internal class Program
 {
     static void Main(string[] args)
     {
-        uint speed = 200;
-        byte shieid = 255;
-        sbyte weather = -20;
-        ushort time;
-        short damage;
-        bool isMove = true;
-        string name = "ЯЮниор";
-        float height = 25.24f;
-        double width = 98.4578;
-        int gold = 1000;
+        Console.WriteLine("Как вас зовут : ");
+        name = Console.ReadLine();
+
+        Console.WriteLine("Сколько вам лет : ");
+        vagest = Console.ReadLine();
+
+        Console.WriteLine("В какой стране вы живете : ");
+        theCountry = Console.ReadLine();
+
+        Console.WriteLine("В каком городе вы живете : ");
+        city = Console.ReadLine();
+
+        Console.WriteLine("Вас зовут : " + name + "\nВам : " + vagest + "\nВаша страна : " + theCountry + "\nВаш город : " + city);
     }
 }
