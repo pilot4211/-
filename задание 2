@@ -4,18 +4,31 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Как вас зовут : ");
-        name = Console.ReadLine();
+       string name = " Лапшин ";
+       string surname = " Дмитрий ";
 
-        Console.WriteLine("Сколько вам лет : ");
-        age = Console.ReadLine();
+        Console.WriteLine(name + surname);
 
-        Console.WriteLine("В какой стране вы живете : ");
-        country = Console.ReadLine();
+        if (name == " Дмитрий ")
+        {
+            
+        }
 
-        Console.WriteLine("В каком городе вы живете : ");
-        city = Console.ReadLine();
+        if (name == " Лапшин ")
+        {
+            name = " Дмитрий ";
+        }
 
-        Console.WriteLine("Вас зовут : " + name + "\nВам : " + age + "\nВаша страна : " + country + "\nВаш город : " + city);
+        if (surname == " Лапшин ")
+        {
+
+        }
+
+        if (surname == " Дмитрий ")
+        {
+            surname = " Лапшин ";
+        }
+
+         Console.WriteLine(name + surname);
     }
 }
