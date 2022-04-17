@@ -3,18 +3,19 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Сколько у вас золата");                           
-        int gold = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Сколько людей в очереди ");
+        int people = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Сколько кристаллов вы хотите купить");        
-        int purchaserequest = Convert.ToInt32(Console.ReadLine());
+        int serviceTime = 10;
 
-        int itemprice = 10;
+        int hour = 60;
 
-        int bagWithCrystals = purchaserequest;       
+        int totalTime = people * serviceTime;
 
-        gold = gold - (itemprice * purchaserequest);
+        int wholeHours = totalTime / hour;
 
-        Console.WriteLine($"Кристаллы = {bagWithCrystals} \nОстаток золото = {gold}");
+        int minutes = totalTime % hour;
+
+        Console.WriteLine($"Людей в очереди {people} \nВремя ожидания часов {wholeHours} минут {minutes}");
     }
 }
