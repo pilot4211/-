@@ -3,12 +3,18 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int pictures = 52;
-        int pageСapacity = 3;
+        Console.WriteLine("Сколько у вас золата");                           
+        int gold = Convert.ToInt32(Console.ReadLine());
 
-        int completedpages = pictures / pageСapacity;
-        int remainder = pictures % pageСapacity;
+        Console.WriteLine("Сколько кристаллов вы хотите купить");        
+        int purchaserequest = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine($"Заполненых страниц - {completedpages} \nостаток - {remainder}");
+        int itemprice = 10;
+
+        int bagWithCrystals = purchaserequest;       
+
+        int remainder = gold - (itemprice * purchaserequest);
+
+        Console.WriteLine($"Кристаллы = {bagWithCrystals} \nОстаток золото = {remainder}");
     }
 }
