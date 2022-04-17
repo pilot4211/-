@@ -5,17 +5,11 @@ internal class Program
     {
         Console.WriteLine("Сколько людей в очереди ");
         int people = Convert.ToInt32(Console.ReadLine());
-
         int serviceTime = 10;
-
-        int hour = 60;
-
+        int minutesInHour = 60;  
         int totalTime = people * serviceTime;
-
-        int wholeHours = totalTime / hour;
-
-        int minutes = totalTime % hour;
-
-        Console.WriteLine($"Людей в очереди {people} \nВремя ожидания часов {wholeHours} минут {minutes}");
+        int hoursLeft = totalTime / minutesInHour;
+        int minutesLeft = totalTime % minutesInHour;
+        Console.WriteLine($"Людей в очереди {people} \nВремя ожидания часов {hoursLeft} минут {minutesLeft}");
     }
 }
