@@ -13,8 +13,8 @@ internal class Program
 
         int bagWithCrystals = purchaserequest;       
 
-        int remainder = gold - (itemprice * purchaserequest);
+        gold = gold - (itemprice * purchaserequest);
 
-        Console.WriteLine($"Кристаллы = {bagWithCrystals} \nОстаток золото = {remainder}");
+        Console.WriteLine($"Кристаллы = {bagWithCrystals} \nОстаток золото = {gold}");
     }
 }
