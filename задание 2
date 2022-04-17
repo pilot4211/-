@@ -4,14 +4,10 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string name = "Лапшин";
-        string surname = "Дмитрий";
-        string temporary;
 
-        Console.WriteLine($"Имя - {name} / Фамилия - {surname}");
-        temporary = name;
-        name = surname;
-        surname = temporary;
-        Console.WriteLine($"Имя - {name} / Фамилия - {surname}");
+        int pictures = 52;
+        int pageСapacity = 3;
+
+        Console.WriteLine($"Заполненых страниц - " + pictures / pageСapacity + "\nостаток - " + pictures % pageСapacity);
     }
 }
