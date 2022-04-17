@@ -1,13 +1,14 @@
 using System;
-
 internal class Program
 {
     static void Main(string[] args)
     {
-
         int pictures = 52;
         int pageСapacity = 3;
 
-        Console.WriteLine($"Заполненых страниц - " + pictures / pageСapacity + "\nостаток - " + pictures % pageСapacity);
+        int completedpages = pictures / pageСapacity;
+        int remainder = pictures % pageСapacity;
+
+        Console.WriteLine($"Заполненых страниц - {completedpages} \nостаток - {remainder}");
     }
 }
